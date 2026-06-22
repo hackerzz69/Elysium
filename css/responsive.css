@@ -1,1 +1,146 @@
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+  }
 
+  .site-nav {
+    position: fixed;
+    right: 18px;
+    left: 18px;
+    top: 84px;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 22px;
+    transform: translateY(-14px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 180ms ease;
+  }
+
+  .site-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .site-nav a {
+    text-align: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .status-card {
+    max-width: 520px;
+  }
+
+  .feature-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .play-panel .panel,
+  .download-card {
+    grid-template-columns: 1fr;
+  }
+
+  .download-actions {
+    margin-top: 0;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+
+  .disclaimer {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-pad {
+    padding: 66px 18px;
+  }
+
+  .site-header {
+    padding: 12px 18px;
+  }
+
+  .brand img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand span {
+    font-size: .98rem;
+    letter-spacing: .11em;
+  }
+
+  .hero {
+    padding-top: 32px;
+  }
+
+  .tag-row {
+    margin-bottom: 10px;
+  }
+
+  .tag {
+    min-height: 31px;
+    font-size: .64rem;
+    letter-spacing: .17em;
+    padding: 0 10px;
+  }
+
+  .hero-logo {
+    width: min(94vw, 520px);
+    margin: 4px 0 18px -10px;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 12vw, 4rem);
+    line-height: 1.0;
+    letter-spacing: -.065em;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 9vw, 3.1rem);
+  }
+
+  .hero-copy {
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .hero-actions .btn,
+  .download-actions .btn {
+    width: 100%;
+  }
+
+  .mobile-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro-card,
+  .play-panel .panel,
+  .download-card,
+  .status-card {
+    padding: 24px;
+    border-radius: 26px;
+  }
+}
+
+@media (max-width: 390px) {
+  .brand span {
+    display: none;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
