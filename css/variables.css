@@ -1,1 +1,22 @@
+:root {
+  --bg: #02080d;
+  --bg-2: #06151b;
 
+  --ice: #37f7ff;
+  --ice-2: #9effff;
+  --ice-soft: rgba(55, 247, 255, 0.18);
+
+  --glass: rgba(5, 24, 32, 0.66);
+  --glass-2: rgba(4, 34, 46, 0.76);
+
+  --text: #f0feff;
+  --muted: #9fc5ce;
+
+  --line: rgba(148, 255, 255, 0.20);
+  --line-soft: rgba(255, 255, 255, 0.08);
+
+  --shadow: 0 24px 90px rgba(0, 238, 255, 0.12);
+
+  --radius: 28px;
+  --max: 1180px;
+}
