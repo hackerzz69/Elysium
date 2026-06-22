@@ -3,182 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elysium | Unofficial RSPS MMORPG</title>
-  <meta name="description" content="Elysium is an icy fantasy themed unofficial RSPS MMORPG community." />
-  <meta name="theme-color" content="#00f5ff" />
+
+  <title>Elysium | Unofficial RSPS</title>
+  <meta name="description" content="Elysium is an unofficial semi-custom RSPS community with PvM, skilling, PvP, trading, and events." />
+  <meta name="theme-color" content="#02080d" />
+
   <link rel="icon" type="image/png" href="assets/elysium-icon.png" />
   <link rel="preload" as="image" href="assets/elysium-logo.png" />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
   <canvas id="snowCanvas" aria-hidden="true"></canvas>
 
   <div class="page-glow page-glow-left"></div>
   <div class="page-glow page-glow-right"></div>
 
-  <header class="site-header">
-    <a href="#top" class="brand" aria-label="Elysium home">
-      <img src="assets/elysium-icon.png" alt="" />
-      <span>Elysium</span>
-    </a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="site-nav" id="siteNav">
-      <a href="#features">Features</a>
-      <a href="#play">Play</a>
-      <a href="#news">News</a>
-      <a href="#community">Community</a>
-      <a class="nav-cta" href="#download">Download</a>
-    </nav>
-  </header>
+  <div data-include="partials/header.html"></div>
 
   <main id="top">
-    <section class="hero section-pad">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Unofficial RSPS MMORPG</p>
-        <img class="hero-logo" src="assets/elysium-logo.png" alt="Elysium" />
-        <h1>Enter a frozen realm built for legends.</h1>
-        <p class="hero-copy">
-          A private fantasy MMORPG experience with icy glass visuals, boss encounters,
-          skilling, PvP, trading, seasonal events, and a community-first world.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#download">Play Now</a>
-          <a class="btn btn-ghost" href="#features">Explore Features</a>
-        </div>
-      </div>
-
-      <aside class="status-card glass reveal delay-1" aria-label="Server status">
-        <div class="status-top">
-          <span class="pulse"></span>
-          <strong>World Online</strong>
-        </div>
-        <div class="stat-grid">
-          <div><span id="playersOnline">247</span><small>Players</small></div>
-          <div><span>3</span><small>Worlds</small></div>
-          <div><span>99%</span><small>Uptime</small></div>
-          <div><span>0.8s</span><small>Ping</small></div>
-        </div>
-        <p class="muted">Hook this card to your API later for live players, uptime, and world status.</p>
-      </aside>
-    </section>
-
-    <section class="section-pad split" id="features">
-      <div class="section-title reveal">
-        <p class="eyebrow">Game World</p>
-        <h2>Built around progression, power, and community.</h2>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card glass reveal">
-          <span class="card-icon">⚔</span>
-          <h3>Custom Bosses</h3>
-          <p>Challenge icy raid bosses, rare drops, unique mechanics, and group encounters.</p>
-        </article>
-        <article class="feature-card glass reveal delay-1">
-          <span class="card-icon">◆</span>
-          <h3>Economy Driven</h3>
-          <p>Trade, grind, craft, and build wealth through a player-powered marketplace.</p>
-        </article>
-        <article class="feature-card glass reveal delay-2">
-          <span class="card-icon">✦</span>
-          <h3>Seasonal Events</h3>
-          <p>Limited-time rewards, holiday maps, global goals, and rotating activities.</p>
-        </article>
-        <article class="feature-card glass reveal">
-          <span class="card-icon">☄</span>
-          <h3>PvP & Wilderness</h3>
-          <p>Risk-based combat zones, ranked fights, clan events, and high-value hotspots.</p>
-        </article>
-        <article class="feature-card glass reveal delay-1">
-          <span class="card-icon">❄</span>
-          <h3>Skilling Paths</h3>
-          <p>Gather, forge, fish, cook, craft, enchant, and master the icy lands of Elysium.</p>
-        </article>
-        <article class="feature-card glass reveal delay-2">
-          <span class="card-icon">★</span>
-          <h3>Highscores</h3>
-          <p>Show off total level, boss KC, PvP rank, collection logs, and seasonal points.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-pad play-panel" id="play">
-      <div class="glass panel reveal">
-        <div>
-          <p class="eyebrow">Start Playing</p>
-          <h2>Three steps to enter Elysium.</h2>
-        </div>
-        <ol class="steps">
-          <li><span>01</span>Create an account on the forum or launcher.</li>
-          <li><span>02</span>Download the client for Windows, Mac, or Linux.</li>
-          <li><span>03</span>Join Discord for updates, events, and support.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section-pad download" id="download">
-      <div class="download-card glass reveal">
-        <img src="assets/elysium-icon.png" alt="" />
-        <div>
-          <p class="eyebrow">Launcher</p>
-          <h2>Download the Elysium client.</h2>
-          <p class="muted">Replace these buttons with your real launcher links when ready.</p>
-        </div>
-        <div class="download-actions">
-          <a class="btn btn-primary" href="#">Windows</a>
-          <a class="btn btn-ghost" href="#">Mac</a>
-          <a class="btn btn-ghost" href="#">Linux</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="news">
-      <div class="section-title reveal">
-        <p class="eyebrow">Latest News</p>
-        <h2>Updates from the realm.</h2>
-      </div>
-      <div class="news-grid">
-        <article class="news-card glass reveal">
-          <small>Update</small>
-          <h3>Frozen Catacombs Preview</h3>
-          <p>A new dungeon concept with tiered bosses, puzzles, and frost-forged loot.</p>
-        </article>
-        <article class="news-card glass reveal delay-1">
-          <small>Event</small>
-          <h3>Double Drops Weekend</h3>
-          <p>Boosted rewards and community boss masses all weekend long.</p>
-        </article>
-        <article class="news-card glass reveal delay-2">
-          <small>Community</small>
-          <h3>Discord Giveaways</h3>
-          <p>Join the community for announcements, guides, polls, and giveaways.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-pad community" id="community">
-      <div class="glass community-box reveal">
-        <p class="eyebrow">Community</p>
-        <h2>Join the players shaping the world.</h2>
-        <p>Use this section for Discord, voting links, forums, wiki, rules, staff list, and support tickets.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#">Join Discord</a>
-          <a class="btn btn-ghost" href="#">Vote</a>
-        </div>
-      </div>
-    </section>
+    <div data-include="partials/hero.html"></div>
+    <div data-include="partials/about.html"></div>
+    <div data-include="partials/features.html"></div>
+    <div data-include="partials/play.html"></div>
+    <div data-include="partials/download.html"></div>
+    <div data-include="partials/news.html"></div>
+    <div data-include="partials/community.html"></div>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Elysium. Unofficial private server community.</p>
-    <p class="disclaimer">This project is unofficial and is not affiliated with or endorsed by Jagex or RuneScape.</p>
-  </footer>
+  <div data-include="partials/footer.html"></div>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
